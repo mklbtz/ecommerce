@@ -1,0 +1,24 @@
+<h1>Editing inventory</h1>
+
+<% form_for(@inventory) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :items %><br />
+    <%= f.text_field :items %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @inventory %> |
+<%= link_to 'Back', inventories_path %>

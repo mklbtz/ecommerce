@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order: 
+  items: 
+  sold_price: 1.5
+
+two:
+  order: 
+  items: 
+  sold_price: 1.5

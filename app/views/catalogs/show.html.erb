@@ -1,0 +1,13 @@
+<p>
+  <b>Items:</b>
+  <%=h @catalog.items %>
+</p>
+
+<p>
+  <b>Sale price:</b>
+  <%=h @catalog.sale_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_catalog_path(@catalog) %> |
+<%= link_to 'Back', catalogs_path %>

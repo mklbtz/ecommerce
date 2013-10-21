@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  customer: 
+  items: 
+  quantity: 
+
+two:
+  customer: 
+  items: 
+  quantity: 

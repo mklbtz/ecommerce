@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  customer: 
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: 
+  country: 
+  card_num: 
+  sale_total: 1.5
+
+two:
+  customer: 
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: 
+  country: 
+  card_num: 
+  sale_total: 1.5
