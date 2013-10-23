@@ -2,28 +2,12 @@
 
 <table>
   <tr>
-    <th>Customer</th>
-    <th>Address1</th>
-    <th>Address2</th>
-    <th>City</th>
-    <th>State</th>
-    <th>Zip</th>
-    <th>Country</th>
-    <th>Card num</th>
-    <th>Sale total</th>
+    <th>Has many</th>
   </tr>
 
 <% @orders.each do |order| %>
   <tr>
-    <td><%=h order.customer %></td>
-    <td><%=h order.address1 %></td>
-    <td><%=h order.address2 %></td>
-    <td><%=h order.city %></td>
-    <td><%=h order.state %></td>
-    <td><%=h order.zip %></td>
-    <td><%=h order.country %></td>
-    <td><%=h order.card_num %></td>
-    <td><%=h order.sale_total %></td>
+    <td><%=h order.has_many %></td>
     <td><%= link_to 'Show', order %></td>
     <td><%= link_to 'Edit', edit_order_path(order) %></td>
     <td><%= link_to 'Destroy', order, :confirm => 'Are you sure?', :method => :delete %></td>

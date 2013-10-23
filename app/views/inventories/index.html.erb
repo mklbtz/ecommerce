@@ -2,16 +2,14 @@
 
 <table>
   <tr>
-    <th>Items</th>
+    <th>Has many</th>
     <th>Location</th>
-    <th>Quantity</th>
   </tr>
 
 <% @inventories.each do |inventory| %>
   <tr>
-    <td><%=h inventory.items %></td>
+    <td><%=h inventory.has_many %></td>
     <td><%=h inventory.location %></td>
-    <td><%=h inventory.quantity %></td>
     <td><%= link_to 'Show', inventory %></td>
     <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
     <td><%= link_to 'Destroy', inventory, :confirm => 'Are you sure?', :method => :delete %></td>
