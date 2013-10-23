@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131021214730) do
+ActiveRecord::Schema.define(:version => 20131023222210) do
 
   create_table "carts", :force => true do |t|
     t.datetime "created_at"
@@ -17,12 +17,6 @@ ActiveRecord::Schema.define(:version => 20131021214730) do
   end
 
   create_table "catalogs", :force => true do |t|
-    t.float    "sale_price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "countries", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -30,12 +24,9 @@ ActiveRecord::Schema.define(:version => 20131021214730) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
-    t.string   "email"
-    t.string   "pass"
-    t.string   "address1"
-    t.string   "address2"
-    t.string   "city"
-    t.string   "state"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,20 +43,10 @@ ActiveRecord::Schema.define(:version => 20131021214730) do
     t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "order_items", :force => true do |t|
-    t.float    "sold_price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "catalog_id"
   end
 
   create_table "orders", :force => true do |t|
-    t.string   "address1"
-    t.string   "address2"
-    t.string   "city"
-    t.string   "state"
-    t.float    "sale_total"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

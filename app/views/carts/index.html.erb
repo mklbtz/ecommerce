@@ -2,16 +2,12 @@
 
 <table>
   <tr>
-    <th>Customer</th>
-    <th>Items</th>
-    <th>Quantity</th>
+    <th>Has many</th>
   </tr>
 
 <% @carts.each do |cart| %>
   <tr>
-    <td><%=h cart.customer %></td>
-    <td><%=h cart.items %></td>
-    <td><%=h cart.quantity %></td>
+    <td><%=h cart.has_many %></td>
     <td><%= link_to 'Show', cart %></td>
     <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
     <td><%= link_to 'Destroy', cart, :confirm => 'Are you sure?', :method => :delete %></td>
