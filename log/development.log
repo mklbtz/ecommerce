@@ -605,3 +605,243 @@ Migrating to AddCatalogToItems (20131023222210)
   [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
   [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `orders`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `orders`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:29) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:442:in `recognize'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):1:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:34) [GET]
+
+ActionController::RoutingError (No route matches "/index" with {:method=>:get}):
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:442:in `recognize'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):2:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:38) [GET]
+
+ActionController::RoutingError (No route matches "/index.html" with {:method=>:get}):
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:442:in `recognize'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):3:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:46) [GET]
+
+ActionController::RoutingError (No route matches "/\n" with {:method=>:get}):
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:442:in `recognize'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):4:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:50) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:442:in `recognize'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):6:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-10-27 15:40:57) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/vendor_ruby/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/vendor_ruby/action_controller/flash.rb:151:in `perform_action'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/vendor_ruby/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/routing/route_set.rb:438:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/head.rb:9:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/session/cookie_store.rb:99:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lock.rb:15:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/vendor_ruby/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:48:in `_call'
+  /usr/lib/ruby/vendor_ruby/rack/lint.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:317:in `process'
+  /usr/lib/ruby/vendor_ruby/action_controller/integration.rb:197:in `get'
+  (irb):7:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+  /usr/lib/ruby/1.8/irb/workspace.rb:52
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2013-10-27 15:41:02) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM `items` [0m
+Rendering template within layouts/items
+Rendering items/index
+  [4;36;1mItem Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Completed in 84ms (View: 71, DB: 2) | 200 OK [http://www.example.com/items/]
